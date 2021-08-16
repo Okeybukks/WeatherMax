@@ -19,12 +19,14 @@ class MyThemeProvider with ChangeNotifier {
       ),
       scaffoldBackgroundColor: Colors.black,
       primaryColor: Colors.black,
+      accentColor: Colors.black,
+      cardColor: Color(0xFF121213),
+      canvasColor: Color(0xFFf0f306),
       textTheme: TextTheme(
           bodyText2: TextStyle(
               color: Colors.white,
               fontSize: 18,
-              fontFamily: 'PublicSans',
-              fontWeight: FontWeight.bold)),
+              fontFamily: 'PublicSans',)),
       primaryTextTheme: TextTheme(headline6: TextStyle(color: Colors.white)));
 
   static final lightTheme = ThemeData(
@@ -39,12 +41,15 @@ class MyThemeProvider with ChangeNotifier {
     ),
     scaffoldBackgroundColor: Colors.white,
     primaryColor: Colors.white,
+    accentColor: Colors.blue.shade100,
+    canvasColor: Colors.black,
+    cardColor: Colors.white,
     textTheme: TextTheme(
         bodyText2: TextStyle(
             color: Colors.black,
             fontSize: 18,
             fontFamily: 'PublicSans',
-            fontWeight: FontWeight.bold)),
+        )),
     primaryTextTheme: TextTheme(headline6: TextStyle(color: Color(0xFF4f4a4a))),
   );
 

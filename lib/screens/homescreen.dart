@@ -2,13 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:untitled/utilities/forecast_widget.dart';
 import 'package:untitled/utilities/temperature_condition.dart';
+import '../constants.dart';
 import '/utilities/appbar_title.dart';
 import '/theme.dart';
-import 'package:intl/intl.dart';
 import 'package:untitled/theme.dart';
-// import '/utilities/background_switch.dart';
-// import '/utilities/temperature_condition.dart';
-// import '/utilities/forecast_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -21,8 +18,6 @@ class _HomeScreenState extends State<HomeScreen> {
     Size size = MediaQuery.of(context).size;
     double height = size.height;
     double width = size.width;
-    var format = DateFormat('d, MMMM y');
-    var dateString = format.format(DateTime.now());
 
     return Scaffold(
       appBar: AppBar(

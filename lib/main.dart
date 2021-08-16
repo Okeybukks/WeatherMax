@@ -67,19 +67,21 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home_rounded,
-                color: Color(0xFFf0f306),
+                color: Theme.of(context).canvasColor,
               ),
               label: ''),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search_rounded, color: Color(0xFFf0f306)),
+            icon: Icon(Icons.search_rounded,
+                color: Theme.of(context).canvasColor),
             label: '',
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.assistant_navigation, color: Color(0xFFf0f306)),
+              icon: Icon(Icons.assistant_navigation,
+                  color: Theme.of(context).canvasColor),
               label: ''),
           BottomNavigationBarItem(
-              icon:
-                  Icon(Icons.person_outline_rounded, color: Color(0xFFf0f306)),
+              icon: Icon(Icons.person_outline_rounded,
+                  color: Theme.of(context).canvasColor),
               label: '')
         ],
       ),
